@@ -1,4 +1,5 @@
 /*
+// AJAX
 const request = new XMLHttpRequest()
 request.open('GET', 'http://qq.com:8888/friends.json')
 // request.open('GET', 'https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1-edb203c114.10.2.js')
@@ -13,7 +14,7 @@ request.onreadystatechange = () => {
 request.send()
 */
 
-
+// JSONP
 function jsonp(url) {
     return new Promise((resolve, reject) => {
         const random = 'shawnJSONPCallbackName' + Math.random()
@@ -45,7 +46,6 @@ jsonp('http://qq.com:8888/friends.js')
     .then((data) => {
         console.log(data)
     })
-
 
 
 
